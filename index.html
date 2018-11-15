@@ -10,6 +10,7 @@
 				width: 100%;
 				background-color: #f54d40;
 				font-family: 'Montserrat', sans-serif;
+				z-index: 0;
 			}
 			#front img {
 				position: absolute;
@@ -21,6 +22,7 @@
 				border-bottom-left-radius: 50px;
 				border-bottom-right-radius: 50px;
 				transition: 1s;
+z-index: 0;
 			}
 			#front img:hover {
 				border-bottom-right-radius: 0px;
@@ -41,6 +43,7 @@
 				top: 10%;
 				font-size: 7vw;
 				color: white;
+z-index: 0;
 			}
 			@keyframes tent {
 				0% {
@@ -54,6 +57,7 @@
 				left: 5%;
 				color: white;
 				top: 50%;
+z-index: 0;
 				animation: tents 2s;
 			}
 			@keyframes tents {
@@ -68,6 +72,7 @@
 				background-color: #ffd088;
 				color: #f7a552;
 				height: 30%;
+z-index: 0;
 			}
 			#sec h2 {
 				position: absolute;
@@ -88,6 +93,7 @@
 				width: 12%;
 				height: 16%;
 				transition: 1s;
+z-index: 1;
 			}
 			#logo:hover {
 				width: 18%;
@@ -98,6 +104,7 @@
 				background-color: #f54d40;
 				height: 70%;
 				width: 100%;
+z-index: 0;
 			}
 			.imgOut {
 				position: absolute;
@@ -116,6 +123,7 @@
 				width: 50%;
 				transition: 1s;
 				border-bottom-left-radius: 50px;
+z-index: 0;
 				border-bottom-right-radius: 50px;
 			}
 			.imgIn:hover {
@@ -135,6 +143,7 @@
 				right: 20%;
 				transform: translate(0,170%);
 				font-size: 5vw;
+z-index: 0;
 				color: white;
 				font-family: 'Montserrat', sans-serif;
 			}
@@ -152,6 +161,7 @@
 				right: 20%;
 				transform: translate(0,170%);
 				font-size: 5vw;
+z-index: 0;
 				color: white;
 				font-family: 'Montserrat', sans-serif;
 				animation: hinner 2s;
@@ -167,6 +177,7 @@
 				padding-right: 10%;
 				background-color: #ffd088;
 				color: #f7a552;
+z-index: 0;
 				height: 30%;
 			}
 			.h2Out {
@@ -178,6 +189,7 @@
 				position: absolute;
 				font-size: 1.5vw;
 				animation: henan 2s;
+transform: translate(0,50%);
 			}
 			@keyframes henan {
 				0% {
@@ -190,6 +202,7 @@
 				font-family: 'Montserrat', sans-serif;
 				height: 70%;
 				width: 100%;
+z-index: 0;
 			}
 			.img2Out {
 				position: absolute;
@@ -242,8 +255,10 @@
 				position: absolute;
 				left: 25%;
 				animation: header 2s;
+z-index: 0;
 				right: 25%;
 				width: 50%;
+				text-align: center;
 				transform: translate(0,70%);
 				font-size: 5vw;
 				color: white;
@@ -262,6 +277,7 @@
 				left: 0;
 				opacity: 0;
 				width: 20%;
+z-index: 0;
 				transform: translate(0,50%);
 				font-size: 1.2vw;
 			}
@@ -270,9 +286,10 @@
 				position: absolute;
 				margin: 4%;
 				left: 0;
+z-index: 0;
 				width: 20%;
 				animation: para 2s;
-				transform: translate(0,50%);
+				transform: translate(0,80%);
 				font-size: 1.2vw;
 			}
 			@keyframes para {
@@ -296,6 +313,7 @@
 				margin: 4%;
 				right:0;
 				width: 20%;
+z-index: 0;
 				color: white;
 				transform: translate(0,50%);
 				font-size: 1.2vw;
@@ -313,6 +331,7 @@
 				background-color: #ffd088;
 				color: #f7a552;
 				height: 60%;
+z-index: 0;
 			}
 			.h22Out {
 				position: absolute;
@@ -330,6 +349,7 @@
 				position: absolute;
 				font-size: 1.5vw;
 				left: 5%;
+z-index: 0;
 				animation: headers 2s;
 				width: 40%;
 				transform: translate(0,80%);
@@ -343,6 +363,7 @@
 			.h22In span {
 				font-size: 3.5vw;
 				font-family: 'Montserrat', sans-serif;
+z-index: 0;
 			}
 			.h23Out {
 				position: absolute;
@@ -361,6 +382,7 @@
 				font-size: 1.5vw;
 				right: 5%;
 				animation: heft 2s;
+z-index: 0;
 				width: 40%;
 				transform: translate(0,80%);
 			}
@@ -379,6 +401,7 @@
 				border: 1px solid white;
 				color: black;
 				padding: 1.5%;
+z-index: 0;
 				text-decoration: none;
 			}
 			.btn:hover {
@@ -435,7 +458,9 @@
 		</div>
 		<div id="sec">
 			<h2 align="left">
-				CCExtractor is a tool to extract subtitles/closed captions from video streams. It's used by universities for research purposes, as well by regular users that want to extract captions from various formats.
+				CCExtractor is a tool to extract subtitles/closed captions from video streams. It's used by universities for 
+
+research purposes, as well by regular users that want to extract captions from various formats.
 			</h2>
 		</div>
 		<img id="logo" src="logo.png">
@@ -445,24 +470,40 @@
 		</div>
 		<div id="oversec">
 			<h2 align="right" id="h23" class="h2Out">
-				CCExtractor Development is an informal (meaning we're not incorporated anywhere) organization that exists to coordinate the development efforts of the volunteers that contribute to the software and to manage our participation in specific events such as Google Summer of Code and Code-In. 
+				CCExtractor Development is an informal (meaning we're not incorporated anywhere) organization that exists 
+
+to coordinate the development efforts of the volunteers that contribute to the software and to manage our participation in specific events such as 
+
+Google Summer of Code and Code-In. 
 			</h2>
 		</div>
 		<div id="GCI" onmouseover="load3()">
 			<img src="logo2.png" id="img3" class="img2Out">
 			<h1 id="h13" align="center" class="h12Out">GoogleSummerOfCode</h1>
 			<p id="p1" align="center" class="p1Out">
-				We are a small org, which means that your contribution will have a large impact. It's not going to mean a 0.5% improvement on a big project - it's going to be more than 10% on a medium size one. If you like challenges and want a chance to shine this is your place. 
+				We are a small org, which means that your contribution will have a large impact. It's not going to mean a 0.5% 
+
+improvement on a big project - it's going to be more than 10% on a medium size one. If you like challenges and want a chance to shine this is your 
+
+place. 
 			</p>
 			<p id="p2" align="center" class="p2Out">
-				We have *mentors all over the world* (North America, Europe, Asia and Australia), so time zones are never a problem. Our main channel of communication is a Slack channel to which everyone is welcome. We expect all accepted students to be available on Slack very often, even if you don't need to talk to your mentor. This will help you ask questions when necessary, and you might be able to help others out as well while working on your project. 
+				We have *mentors all over the world* (North America, Europe, Asia and Australia), so time zones are never a 
+
+problem. Our main channel of communication is a Slack channel to which everyone is welcome. We expect all accepted students to be available on 
+
+Slack very often, even if you don't need to talk to your mentor. This will help you ask questions when necessary, and you might be able to help others 
+
+out as well while working on your project. 
 			</p>
 		</div>
 		<div id="document" onmouseover="load4()">
 			<h2 id="h21" align="center" class="h22Out">
 				<span>Know more</span><br>
 				To know more about GSoC with CCExtractor Development click here:<br>
-				<a class="btn" href="https://www.ccextractor.org/public:gsoc:ideas_page_for_summer_of_code_2018">Know more</a>
+				<a class="btn" href="https://www.ccextractor.org/public:gsoc:ideas_page_for_summer_of_code_2018">Know 
+
+more</a>
 			</h2>
 			<h2 id="h22" align="center" class="h23Out">
 				<span>GCI</span><br>
